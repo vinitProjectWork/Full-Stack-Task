@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* Dark mode: use the .dark class strategy */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Hide scrollbar for category navigation */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth scroll for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
